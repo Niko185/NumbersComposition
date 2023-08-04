@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NumbersComposition</string>
+    <string name="question_mark">?</string>
+
 </resources>

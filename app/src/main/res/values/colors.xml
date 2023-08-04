@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="main_orange">#FF5722</color>
+    <color name="main_purple">#673AB7</color>
+
+
+    <color name="variant_answer_1">#009688</color>
+    <color name="variant_answer_2">#1976D2</color>
+    <color name="variant_answer_3">#E53935</color>
+    <color name="variant_answer_4">#9E9D24</color>
+    <color name="variant_answer_5">#03A9F4</color>
+    <color name="variant_answer_6">#880E4F</color>
 </resources>
