@@ -11,11 +11,11 @@
 
     <ImageView
         android:id="@+id/emoji_result"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_margin="48dp"
-        android:contentDescription="Game Over"
-        app:layout_constraintBottom_toTopOf="@id/tv_need_answers"
+        android:contentDescription="@string/game_over"
+        app:layout_constraintBottom_toTopOf="@id/tv_required_answers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,42 +23,43 @@
         />
 
     <TextView
-        android:id="@+id/tv_need_answers"
+        android:id="@+id/tv_required_answers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Необходимое количество правельных ответов: %s"
+        android:text="@string/required_score"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/tv_score_answers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
+        app:layout_constraintVertical_chainStyle="packed"
         />
 
     <TextView
         android:id="@+id/tv_score_answers"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ваш счет: %s"
+        android:text="@string/score_answers"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_need_percentage"
-        app:layout_constraintEnd_toEndOf="@id/tv_need_answers"
-        app:layout_constraintStart_toStartOf="@id/tv_need_answers"
-        app:layout_constraintTop_toBottomOf="@id/tv_need_answers"
+        app:layout_constraintBottom_toTopOf="@id/tv_required_percentage"
+        app:layout_constraintEnd_toEndOf="@id/tv_required_answers"
+        app:layout_constraintStart_toStartOf="@id/tv_required_answers"
+        app:layout_constraintTop_toBottomOf="@id/tv_required_answers"
         />
 
     <TextView
-        android:id="@+id/tv_need_percentage"
+        android:id="@+id/tv_required_percentage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Необходимый процент правельных ответов: %s"
+        android:text="@string/required_percentage"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/tv_score_percentage"
-        app:layout_constraintEnd_toEndOf="@id/tv_need_answers"
-        app:layout_constraintStart_toStartOf="@id/tv_need_answers"
+        app:layout_constraintEnd_toEndOf="@id/tv_required_answers"
+        app:layout_constraintStart_toStartOf="@id/tv_required_answers"
         app:layout_constraintTop_toBottomOf="@id/tv_score_answers"
+        app:layout_constraintVertical_chainStyle="packed"
         />
 
     <TextView
@@ -66,19 +67,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Процент правельных ответов %s"
+        android:text="@string/score_percentage"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/tv_need_answers"
-        app:layout_constraintStart_toStartOf="@id/tv_need_answers"
-        app:layout_constraintTop_toBottomOf="@+id/tv_need_percentage"
+        app:layout_constraintEnd_toEndOf="@id/tv_required_answers"
+        app:layout_constraintStart_toStartOf="@id/tv_required_answers"
+        app:layout_constraintTop_toBottomOf="@id/tv_required_percentage"
         />
 
     <Button
         android:id="@+id/button_retry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Попробовать снова"
+        android:text="@string/retry"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 

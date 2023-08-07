@@ -30,21 +30,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Cостав Числа"
+            android:text="@string/welcome_title"
             android:textColor="#673AB7"
             android:textSize="24sp"
             app:layout_constraintTop_toBottomOf="@id/imMath"
-            tools:layout_editor_absoluteX="16dp" />
-
-        <TextView
-            android:id="@+id/tvDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Правила игры: перед вами будет три фигуры, две снизу и одна сверху, в двух из них будут числа. Небходимо, чтобы сумма чисел из двух нижних фигур была равна числу в верхней фигуре, для этого нужно вставить недостающее чисило."
-            android:textColor="#673AB7"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/tvTitle"
             tools:layout_editor_absoluteX="16dp" />
 
         <Button
@@ -55,6 +44,20 @@
             android:text="Понятно"
             app:layout_constraintBottom_toBottomOf="parent"
             />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="16dp"
+            android:text="@string/game_rules"
+            android:textColor="@color/main_purple"
+            app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
